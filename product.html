@@ -19,22 +19,23 @@
         <a href="index.html">Home</a> 
         <a href="products.html">Products</a> 
         <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="profile.html">Profile</a>
     </nav>
 </header>
-<section>
-    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Product Name">
-    <h1>Product Name</h1>
-    <h2>₹ Price</h2>
+<section class="product-details">
+    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=500&q=80" alt="Classic T-Shirt">
+    <h1>Classic T-Shirt</h1>
+    <h2>₹1000</h2>
+    <p>A comfortable and stylish classic t-shirt suitable for everyday wear.</p>  
     <h3>Specifications</h3>
-    <p>Here are the key specifications for this product:</p>
-    <p>Specifications:</p>
     <ul>
-        <li>Brand</li>
-        <li>Color</li>
-        <li>Size</li>
-        <li>Material</li>
-        <li>Weight</li>
-        <li>Size</li>
+        <li>Brand: StyleHub</li>
+        <li>Color: Black</li>
+        <li>Size: Medium</li>
+        <li>Material: Cotton</li>
+        <li>Weight: 250g</li>
     </ul>
     <h3>Product Details</h3>
     <table border="1">
@@ -54,12 +55,16 @@
             <td>Size</td>
             <td>Medium</td>
         </tr>
+        <tr>
+             <td>Material</td>
+             <td>Cotton</td> 
+        </tr>  
     </table>
     <br>
     <label for="Product-quantity">Quantity:</label>
     <input type="number" id="Product-quantity" value="1" min="1">
     <br><br>
-    <button class="add-to-cart">Add to Cart</button>
+    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
 </section>
   <footer>
    <p>&copy; 2026 StyleHub Fashion - Apparel. All Rights Reserved.</p>
