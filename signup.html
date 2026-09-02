@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StyleHub - Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -27,15 +28,15 @@
         <div class="signup-box">
             <h2>Create Your Account</h2>
             <p>Join StyleHub and explore the latest fashion trends!</p>
-            <form action="#" method="post">
+            <form id="register-form" onsubmit="registerUser(event)">
                 <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                <input type="text" id="register-name" name="fullname" placeholder="Enter your full name" required>
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" id="register-email" name="email" placeholder="Enter your email" required>
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+                <input type="password" id="register-password" name="password" placeholder="Create a password" minlength="6" required>
                 <label for="confirm-password">Confirm Password</label>
                 <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" minlength="6" required>
                 <label class="terms">
