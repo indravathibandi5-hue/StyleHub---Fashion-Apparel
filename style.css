@@ -139,8 +139,8 @@ nav {
         linear-gradient(
             rgba(26, 26, 46, 0.68),
             rgba(26, 26, 46, 0.68)
-        ),
-       background-image: url("./images/hero.jpg") center/cover no-repeat;
+        );
+        
        background-color: lightpink;
        background-size: cover;
        background-position: center;
